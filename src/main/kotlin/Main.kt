@@ -22,12 +22,16 @@ fun main() {
 
             //UpdateInventory hace la suma del 15% a los precios del inventario que sean mayor a 2000 pesos
             println(h2DAO.updateInventory())
+            println("---------------------------------------------------------------------------------------")
             //SelectAll mostrara todas las tiendas
             println(h2DAO.selectAllTienda())
+            println("---------------------------------------------------------------------------------------")
             //SelectInventory Mostrara el inventario por id de tienda
             println(h2DAO.selectInventory(1))
+            println("---------------------------------------------------------------------------------------")
             //SelectAllInventory muestra todos los inventarios
             println(h2DAO.selectAllInventory())
+            println("---------------------------------------------------------------------------------------")
         }
     } else
         println("Conexión ERROR")
